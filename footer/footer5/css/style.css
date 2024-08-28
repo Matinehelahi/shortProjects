@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #eeeceb;
+}
+footer{
+    position: fixed;
+    background-color: #111;
+    color: #fff;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+}
+footer .container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 80px;
+}
+footer .container .sec h4{
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 10px;
+}
+ul{
+    list-style-type: none;
+}
+footer .container .sec{
+    width: 30%;
+}
+footer .container .sec .about{
+    margin-bottom: 10px;
+}
+footer .container .sec li{
+    padding: 5px 0;
+    font-size: 14px;
+    font-weight: 400px;
+}
+footer .container .sec li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer .container .sec li a:hover{
+    color: #eb2f06;
+}
+footer .container .sec input[type=email] {
+    width:100% ;
+    height: 40px;
+    margin-bottom: 15px;
+    background-color: #000;
+    color: #eeeceb;
+    border:1px solid #4b4949;
+    padding-left: 10px;
+    outline: none;
+}
+::placeholder{
+    
+    color: #4b4949s;
+}
+footer .container .sec input[type=submit] {
+    width:100% ;
+    background-color: #eb2f06;
+    color: #fff;
+    border: none;
+    height: 40px;
+    margin-bottom: 15px;
+}
+footer .container .sec input[type=submit]:hover{
+    border: 1px solid #eb2f06;
+    color: #eb2f06;
+    background-color: #000;
+    cursor: pointer;
+
+}
+footer .container .sec .social-box a{
+    color: #fff;
+    background-color: #000;
+    border:1px solid #4b4949;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    margin-left: 10px;
+    border-radius: 5px;
+}
+footer .container .sec .social-box a:hover{
+    color: #eb2f06;
+    border: 1px solid #eb2f06;
+
+}
+footer .footer-bottom{
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    justify-content: right;
+    padding: 0 40px 5px 0;
+}
+footer .footer-bottom a{
+    color: #eb2f06;
+    text-decoration: none;
+}
