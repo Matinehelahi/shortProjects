@@ -6,89 +6,90 @@
 }
 
 body {
-    line-height: 1.5;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #eeeceb;
 }
 
 footer {
-    padding: 50px 100px;
+    position: fixed;
     background-color: #3044a5;
-}
-
-.container {
     width: 100%;
-    height: auto;
-
+    bottom: 0;
+    left: 0;
 }
-
-.row {
+footer .container .row {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 80px;
 }
-
-.sec {
+footer .container .sec{
     width: 25%;
-    padding: 15px;
     color: #fff;
-
 }
 
-.sec a {
+footer .container .sec h4 {
     color: #fff;
-    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400px;
+    margin-bottom: 10px;
+    position: relative;
 }
 
-.sec h4 {
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 15px;
-}
-  .sec h4::before {
+footer .container .sec h4::before {
     content: '';
     position: absolute;
-    background-color: #ffeb3b;
+    left: 0;
+    bottom: -2px;
     height: 2px;
-    width: 50px;
+    width: 35px;
+    background-color:#ffeb3b ;
 }
 
 ul {
     list-style-type: none;
-    margin-top: 15px;
-
+}
+footer .sec li {
+    margin: 6px 0;
 }
 
-.about-as  p{
-    font-size: 15px;
+footer .sec li a {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    opacity: 0.8;
+    transition: all 0.4s ease;
 }
-
-.social-box ul li {
-    display: inline;
-    background-color: #3e56cb;
-    padding: 5px;
-    margin-left: 5px;
-    border-radius: 4px;
-}
-.social-box ul li:hover{
-    background-color: #6380fe;
-}
-.quick-links li ,.shoes li{
-    margin-bottom: 10px;
-}
-.quick-links li a:hover ,
-.shoes li a:hover ,
-.contact a:hover{
+footer .sec li a:hover {
+    opacity: 1;
     color: #ffeb3b;
 }
-.info{
-    position: relative;
+footer .sec .social-box{
+    margin-top: 20px;
+
+}
+footer .sec .social-box a{
+    width: 40px;
+    height: 40px;
+    background-color: #5166d2;
+    color: #fff;
+    padding: 5px;
+    margin-left: 10px;
+
 }
 .info li{
     display: grid;
     grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
 }
-.footer-buttom{
-    width: 100%;
-    background-color: #1f3389;
-    padding: 8px;
-    text-align: center;
+footer .footer-bottom {
     color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 40px;
+    background-color: #1f3389
+
 }
