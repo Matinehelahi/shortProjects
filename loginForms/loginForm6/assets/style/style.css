@@ -4,32 +4,11 @@
     box-sizing: border-box;
     font-family: ;
 }
-
-.wrapper{
-    background-color: #ececec;
-    padding:0 20px 0 10px;
-}
-.container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body{
+    width: 100%;
     min-height: 100vh;
-}
-.row{
-    width: 900px;
-    height: 550px;
-}
-.side-image{
-    background-image: url('../images/view-beautiful-rainbow-nature-landscape.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    border-radius: 10px 0 0 10px ;
-}
-img{
-    width: 35px;
-    position: absolute;
-    top: 30px;
-    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
