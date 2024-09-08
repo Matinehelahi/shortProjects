@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to right,#a594f9 0%,#cdc1ff 100% );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    background-color: #fff;
+    width: 350px;
+    height: 450px;
+    border-radius: 8px;
+    box-shadow:0 10px 10px rgba(0,0 , 0, 0.15) ;
+    padding: 25px 30px;
+    
+}
+.login-box header{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 20px 0 10px 0;
+    position: relative;
+}
+.login-box header::before{
+    content: '';
+    position: absolute;
+    height: 4px;
+    width: 35px;
+    bottom: -1px;
+    left: 0;
+    border-radius: 5px;
+    background: linear-gradient(to right,#a594f9 0%,#cdc1ff 100% );
+
+}
+.login-box .input-box .input-field{
+    width: 100%;
+    height: 45px;
+    border: none;
+    font-size: 15px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    outline: none;
+}
+.login-box .input-box .input-field:hover{
+    border-bottom: 2px solid #a594f9;
+}
+.login-box .input-box .input-field ::placeholder{
+    color: #ccc;
+}
+
+.login-box .input-submit .submit-btn {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    background: linear-gradient(to right,#a594f9 0%,#cdc1ff 100% );
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    box-shadow:0 5px 5px rgba(0,0 ,0, 0.1) ;
+
+}
+.login-box .input-submit .submit-btn:hover{
+    font-size: 16px;
+}
+.login-box .social-box p{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 400;
+}
+.login-box .social-box .button-twitter a,
+.login-box .social-box .button-Facebook a {
+    display: block;
+    width: 100%;
+    height: 45px;
+    font-size: 15px;
+    text-decoration: none;
+    padding-left: 20px;
+    color: #fff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    opacity: 0.8;
+    line-height: 45px;
+}
+.login-box .social-box .button-twitter i,
+.login-box .social-box .button-Facebook i {
+    padding-right: 12px;
+    font-size: 20px;
+}
+
+.login-box .social-box .button-twitter a:hover{
+    background: linear-gradient(to left,#00acee 0%,#1abeff 100% );
+
+}
+.login-box .social-box .button-Facebook a:hover{
+    background: linear-gradient(to left,#3b5998 0%,#476bb8 100% );
+
+}
+
+.login-box .social-box .button-twitter a{
+    background: linear-gradient(to right,#00acee 0%,#1abeff 100% );
+
+}
+.login-box .social-box .button-Facebook a{
+    background: linear-gradient(to right,#3b5998 0%,#476bb8 100% );
+
+}
+
