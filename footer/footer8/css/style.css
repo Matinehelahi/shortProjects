@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+footer {
+    width: 80%;
+    background-color: #fff;
+    margin: 40px 80px;
+}
+
+footer .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+footer .container.sec{
+    width: 25%;
+}
+footer .container .sec ul{
+    list-style-type: none;
+}
+footer .container .sec h4{
+    color: #000;
+}
+
+footer .container .sec li a{
+    color: #484444;
+    text-decoration: none;
+    padding: 10px;
+}
