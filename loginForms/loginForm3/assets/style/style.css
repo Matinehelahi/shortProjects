@@ -10,7 +10,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color:rgb(231, 228, 222);
+    background-color:#aaa;
 }
 .login-box {
     display: flex;
@@ -25,7 +25,7 @@ body {
 }
 
 .login-header header{
-    color: blue;
+    color:rgb(34, 34, 127);
     margin-bottom: 10px;
     font-size: 25px;
     font-weight: 600;
@@ -41,13 +41,15 @@ body {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
+    color: #aaa;
+    outline: none;
+    padding-left:20px ;
     transition: border-color 0.3s ease-in-out;
 }
 .input-box .input-filed:hover{
     width: 105%;
 }
 ::placeholder{
-    padding-left: 10px;
     color: #aaa;
 }
 
@@ -73,7 +75,7 @@ body {
     justify-content:flex-start;
     position: relative;
     left: 80px;
-    font-size: 15pxs;
+    font-size: 15px;
 
 }
 
