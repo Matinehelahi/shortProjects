@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: ;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: blueviolet;
+
+}
+nav label{
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    padding: 0 100px;
+    line-height: 80px;
+}
+nav ul {
+    float: right;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 3px;
+    padding: 7px 13px;
+}
+
+nav .active,a:hover{
+    background-color: rgba(0,0,0,0.2);
+    transition: .s5;
+
+}
+
+.checkbtn{
+    font-size: 30px;
+    color :#fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#check{
+    display: none;
+
+}
+@media (max-width:952) {
+    label{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+    
+}
+@media (max-width:858px) {
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0,0,0,0.2);
+        top: 80px;
+        left: -100;
+        text-align: center;
+        transition: all .5s;
+    } 
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+    line-height: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    a:hover,a.active{
+        background-color: none;
+        color: blueviolet;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    
+}
+section{
+    background: url('../image/river-surrounded-by-forests-cloudy-sky-thuringia-germany.jpg');
+    background-size: cover;
+    height: calc(100vh - 80px);
+}

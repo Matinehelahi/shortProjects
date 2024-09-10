@@ -33,7 +33,7 @@ body {
     font-weight: 600;
 }
 .input-box{
-    display: flex;
+    displa y: flex;
     justify-content: center;
 }
 .input-box .input-field{
