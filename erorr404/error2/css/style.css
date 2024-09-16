@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #3626a7 0%, #a6b1e1 100%);
+}
+
+.container {
+    width: 700px;
+    height: 350px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+    padding: 20px 30px;
+    text-align: center;
+
+}
+
+.container h1 {
+    font-size: 150px;
+    font-weight: 700;
+    position: relative;
+
+}
+.container h1:after{
+    position: absolute;
+    content: attr(data-text);
+    top: 0;
+    left: 0;
+    right: 0;
+    background-size: 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(to right, #3626a7 0%, #a6b1e1 100%);
+}
+
+.container .content {
+    padding: 0 100px;
+}
+
+.container .content span {
+    font-size: 20px;
+    font-weight: 600;
+    color: #555050;
+    letter-spacing: 1px;
+
+}
+
+.container .content p {
+    padding: 20px 40px;
+    font-size: 15px;
+    color: #1e1d1d;
+
+}
+
+
+.container .content button {
+    color: #3626a7;
+    border: 1px solid #3626a7;
+    background: #fff;
+    border-radius: 20px;
+    width: 150px;
+    height: 40px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: all0.3s eases;
+}
+.container .content button:hover{
+    color: #fff;
+    background: #3626a7;
+}
