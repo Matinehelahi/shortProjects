@@ -1,0 +1,215 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.calendar-box {
+    width: 550px;
+    background: #fff;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.calendar-box .header-date {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    padding: 10px 30px;
+    border-bottom: 1px solid #ccc;
+    border-radius: 10px 10px 0 0px;
+}
+
+.calendar-box .header-date a {
+    text-decoration: none;
+    color: #00569E;
+
+}
+
+.calendar-box .middle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 20px;
+}
+
+.calendar-box .middle .month {
+    font-weight: 600;
+    margin: 0 100px;
+}
+
+.calendar-box .middle .chevron {
+    font-size: 30px;
+}
+
+.calendar {
+    display: flex;
+    padding: 10px 17px;
+    justify-content: space-between;
+}
+
+.calendar .calendar-right {
+    margin-left: 10px;
+}
+
+.calendar .calendar-left {
+    margin-right: 10px;
+}
+
+.calendar .weeks li {
+    font-weight: 600;
+    padding: 0 15px;
+}
+
+.calendar .days li {
+    cursor: pointer;
+    z-index: 1;
+    padding: 15px;
+}
+
+.days li.inactive {
+    color: #aaa;
+}
+
+.days li.active {}
+
+.calendar ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.calendar ul li {
+    width: calc(100% / 7);
+    position: relative;
+}
+
+.calendar .days li::before {
+    position: absolute;
+    content: "";
+    height: 30px;
+    width: 30px;
+    top: 50%;
+    left: 38%;
+    z-index: -3;
+    border-radius: 5px;
+    background: transparent;
+    transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+    border: 1px solid #ccc;
+}
+
+.days li:hover:before {
+    border: 1px solid #FDB713;
+}
+
+.footer-calendar {
+    display: flex;
+    background: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    border-top: 1px solid #ccc;
+    border-radius: 0 0 10px 10px;
+}
+
+.footer-calendar .comment-right {
+    display: flex;
+}
+
+.footer-calendar .comment-right .littel {
+    font-size: 14px;
+    margin-left: 8px;
+    color: #767575;
+}
+
+.footer-calendar .comment-right .big {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.footer-calendar .comment-left button {
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: #0b7cd891;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.footer-calendar .comment-left button:hover {
+    background-color: #00569E;
+}
+
+/* //////////////////////////////////////////// */
+.passenger-list {
+    width: 300px;
+    padding: 20px 10px;
+    border: 1px solid #d2c2c2;
+    border-radius: 10px;
+}
+
+.passenger-list .person {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.passenger-list .text {
+    display: flex;
+}
+
+.passenger-list .text .texto {
+    font-size: 14px;
+    color: #000;
+    margin-left: 8px;
+}
+
+.passenger-list .text .details {
+    font-size: 14px;
+    color: #767575;
+}
+
+.passenger-list .number {
+    display: flex;
+}
+
+.passenger-list .number .icon {
+    border-radius: 5px;
+    color: #fff;
+    padding: 2px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.passenger-list .number .plus {
+    background: #00569E;
+}
+
+.passenger-list .number .minus {
+    background: #0b7cd891;
+}
+.passenger-list .number .minus:hover{
+    background: #00569E;
+}
+/* /////////////////////////////////////////// */
+.city-box{
+    position: absolute;
+    width: 200px;
+    padding: 20px 10px;
+    border: 1px solid #d2c2c2;
+    border-radius: 10px;
+    background: #fff;
+}

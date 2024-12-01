@@ -1,46 +1,53 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-:root{
-    __primery--color:#c6c3c3;
-    __second--color:#ffffff;
-    __black--color:#000000;
+
+:root {
+    __primery--color: #c6c3c3;
+    __second--color: #ffffff;
+    __black--color: #000000;
 }
-body{
+
+body {
     background-image: url('../images/black-prism-concept-ai-generated.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
-a{
+
+a {
     text-decoration: none;
     color: #ffffff;
 }
-a:hover{
+
+a:hover {
     text-decoration: underline;
 }
-.wrapper{
+
+.wrapper {
     display: flex;
     width: 100%;
     justify-content: center;
     align-items: center;
-    min-height:100vh ;
+    min-height: 100vh;
     background-color: rgba(0, 0, 0, 0.2);
 }
-.login-box{
+
+.login-box {
     position: relative;
     width: 450px;
     backdrop-filter: blur(25px);
     border: 2px solid #ccc;
     border-radius: 15px;
-    box-shadow:0px 0px 10px 2px rgba(0, 0, 0, 0.3) ;
+    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.3);
     padding: 7.5em 2.5em 4em 2.5em;
     color: #ffffff;
 }
-.login-header  {
+
+.login-header {
     position: absolute;
     top: 0;
     left: 50%;
@@ -52,14 +59,16 @@ a:hover{
     height: 70px;
     border-radius: 0 0 20px 20px;
     background-color: #ccc;
-    
+
 }
-.login-header header{
+
+.login-header header {
     font-size: 30px;
     color: #000;
 }
-.login-header::before{
-    content:"" ;
+
+.login-header::before {
+    content: "";
     position: absolute;
     top: 0;
     left: -30px;
@@ -69,8 +78,9 @@ a:hover{
     background: transparent;
     box-shadow: 15px 0 0 0 #ccc;
 }
-.login-header::after{
-    content:"" ;
+
+.login-header::after {
+    content: "";
     position: absolute;
     top: 0;
     right: -30px;
@@ -80,14 +90,16 @@ a:hover{
     background: transparent;
     box-shadow: -15px 0 0 0 #ccc;
 }
+
 .input-box {
     position: relative;
     display: flex;
     flex-direction: column;
     margin: 20px 0;
-   
+
 }
-.input-box .input-field{
+
+.input-box .input-field {
     width: 100%;
     height: 55px;
     font-size: 16px;
@@ -99,41 +111,45 @@ a:hover{
     outline: none;
 }
 
-#user{
+#user {
     margin-bottom: 10px;
 }
-.label{
+
+.label {
     position: absolute;
     top: 15px;
     left: 20px;
     transition: .2s;
     color: #fff;
 }
-.input-field:focus ~ .label,
-.input-field:valid ~ .label{
+
+.input-field:focus~.label,
+.input-field:valid~.label {
     position: absolute;
     top: -10px;
     left: 20px;
     font-size: 14px;
-    background-color:#ffffff ;
+    background-color: #ffffff;
     padding: 0 10px;
     color: #000;
 }
-    .icon{
-        position: absolute;
-        top: 18px;
-        right: 25px;
-        font-size: 20px;
-        color: #fff;
-    }
 
-.remember-forget{
+.icon {
+    position: absolute;
+    top: 18px;
+    right: 25px;
+    font-size: 20px;
+    color: #fff;
+}
+
+.remember-forget {
     display: flex;
     justify-content: space-between;
     font-size: 15px;
     color: #fff;
 }
-.input-submit{
+
+.input-submit {
     width: 100%;
     height: 50px;
     background: #ececec;
@@ -145,22 +161,27 @@ a:hover{
     transition: .3s;
     margin-bottom: 10px;
 }
-.input-submit:hover{
+
+.input-submit:hover {
     background: #ccc;
 }
-.register{
+
+.register {
     text-align: center;
 
 }
-.register a{
+
+.register a {
     font-weight: 500;
 
 }
-@media  only screen and(max-width:564px){
-    .wrapper{
+
+@media only screen and(max-width:564px) {
+    .wrapper {
         padding: 20px;
     }
-    .login-box{
+
+    .login-box {
         padding: 7.5em 1.5em 4em 1.5em;
 
     }

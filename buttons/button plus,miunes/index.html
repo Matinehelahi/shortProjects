@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button with increment and Decrement</title>
+    <link rel="stylesheet" href="../button plus,miunes/style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="decrement" onclick="stepper(this)"> - </button>
+        <input type="number" min="1" max="6" step="1" value="1" id="my_input" readonly>
+        <button id="increment" onclick="stepper(this)"> + </button>
+    </div>
+    <script>
+        const my_input=document.getElementById("my_input");
+        function stepper(btn){
+            let id = btn.getAttribute("id");
+            let min = my_input.getAttribute("min");
+            let max = my_input.getAttribute("max");
+            let step = my_input.getAttribute("step");
+            let val = my_input.getAttribute("value");
+            let calcstep = (id == "increment") ? (step*1):(step * -1);
+            let newValue = parseInt(val) + calcstep;
+
+            if(newValue >= min && newValue <= max){
+                my_input.setAttribute("value" , newValue);
+            }
+
+        }
+        
+    </script>
+</body>
+</html>

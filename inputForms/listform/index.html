@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../listform/style.css">
+</head>
+
+<body>
+    <div class="select-menu">
+        <div class="select">
+            <span>Select language</span>
+
+        </div>
+        <div class="options_list">
+            <div class="option">English</div>
+            <div class="option">Arabic</div>
+            <div class="option">persion</div>
+            <div class="option">spanish</div>
+            <div class="option">french</div>
+            <div class="option">German</div>
+        </div>
+    </div>
+
+    <script>
+        const select = document.querySelector(".select");
+        const options_list = document.querySelector(".options_list");
+        const options = document.querySelectorAll(".option");
+
+        select.addEventListener("click", () => {
+            options_list.classList.toggle("active");
+            // select.querySelector("").classList.toggle("");
+        });
+        options.forEach((option) => {
+            option.addEventListener("click", () => {
+                options.forEach((option) => { option.classList.remove('selected') });
+                select.querySelector("span").innerHTML = option.innerHTML;
+                option.classList.add("selected");
+                options_list.classList.toggle("active");
+                // select.querySelector("").classList.toggle("");
+            });
+
+        });
+    </script>
+
+   
+  
+</body>
+
+</html>

@@ -1,0 +1,188 @@
+
+
+
+
+
+*{
+    direction: rtl;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form-explain .a-input {
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    display: flex;
+}
+
+.form-explain input {
+    height: 45px;
+    font-size: 14px;
+    color: #6C7680;
+    padding: 0 10px;
+    background: transparent;
+    transition: 0.2s ease;
+    outline: none;
+    border: 1px solid #BEC6CC;
+    line-height: 45px;
+}
+
+.form-explain .is-first input {
+    width: 200px;
+    height: 45px;
+    border-left: none;
+    border-radius: 0 7px 7px 0;
+}
+
+.form-explain  .is-last input {
+    width: 200px;
+    height: 45px;
+    border-radius: 7px 0 0 7px;
+}
+.form-explain .date .is-first input {
+    width: 150px;   
+}
+
+.form-explain .date .is-last input {
+    width: 150px;
+}
+.form-explain .label {
+    position: absolute;
+    font-size: 14px;
+    color: #6c7680;
+    padding: 0 10px;
+    transition: 0.2s ease;
+    display: inline-block;
+}
+.form-explain .left{
+    padding-right: 20px;
+}
+input:focus {
+    
+    border: 1px solid #212020;
+}
+input:focus+.label {
+    height: 30px;
+    line-height: 30px;
+    padding: 0 2px;
+    background: #fff;
+    transform: translate(-15px, -16px);
+    z-index: 1111;
+}
+input:hover+.calendar-box{
+    display: block;
+}
+
+
+.form-explain .input-group-btn button {
+    border: 1px solid #BEC6CC;
+    border-radius: 50%;
+    background: #fff;
+    width: 2rem;
+    height: 2rem;
+    margin: 8px 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #4B5259;
+    z-index: 1;
+    right: 255px;
+    cursor: pointer;
+}
+
+/* ************************** */
+.form-explain .passeger .is-first input {
+    outline: none;
+    width: 150px;
+    height: 45px;
+    font-size: 14px;
+    border: 1px solid #BEC6CC;
+    border-radius: 7px;
+}
+
+.form-explain .passeger .is-first label {
+    color: #000;
+}
+
+/* **************** */
+
+.form-explain .search .button-box button {
+    border: none;
+    outline: none;
+    background: #FDB713;
+    width: 160px;
+    height: 45px;
+    border-radius: 7px;
+    font-size: 17px;
+    color: #000;
+}
+
+.form-explain .search .button-box button:hover {
+    background: #E3A107;
+}
+
+/* ///////////////////////////////////////////// */
+.select-menu {
+    width:200px;
+    cursor: pointer;
+    position: relative;
+}
+.options-list {
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-top: 14px;
+    padding: 0px;
+    max-height: 200px;
+    overflow-y: auto;
+    transition: 1s linear.2s;
+    height: 0;
+}
+.option {
+    padding: 8px 0;
+    font-weight: 500;
+    font-size: 18px;
+    transition: .1s ease-in-out;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    text-align: center;
+    padding-right: 10px;
+}
+.options-list .bold{
+    background: #f8fafb;
+    height: 20px;
+    align-items: center;
+    padding-right: 8px;
+    font-size: 13px;
+    color: #6c7680;
+    font-weight:600 ;
+}
+.options-list .icon{
+    color: #949da7;
+    padding-left: 10px;
+}
+.option:hover{
+    background-color: #45a7d81b;
+}
+.options-list::-webkit-scrollbar {
+    width: 4px;
+    background-color: #eee;
+}
+
+.options-list::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+.options-list.active{
+    height: 200px;
+}
